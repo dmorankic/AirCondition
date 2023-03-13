@@ -1,0 +1,31 @@
+#temp{
+  position: absolute;
+  top: 545px;
+  right: 102px;
+  background-color: #3f4541;
+  color: white;
+  height: 55px;
+  width: 85px;
+  font-size:18px;
+  text-align: center;
+
+  clip-path: polygon(25% 0%, 100% 0%, 79% 74%, 0 74%);
+}
+.rotated{
+  transform: rotateX(42deg);
+  position: absolute;
+  bottom: 12%;
+  right: 13%;
+}
+.rotated2{
+  transform: rotateX(52deg);
+  position: absolute;
+  bottom: 12%;
+  right: 13%;
+}
+.rotated3{
+  transform: rotateX(62deg);
+  position: absolute;
+  bottom: 12%;
+  right: 13%;
+}

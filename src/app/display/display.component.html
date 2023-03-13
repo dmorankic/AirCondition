@@ -1,0 +1,22 @@
+<!-- <div id="on/off">AC status : {{ compStatus }}</div> -->
+<div id="temp" *ngIf="compStatus=='on'"><p >Speed  {{ speed }}</p></div>
+<div id="fanAngle">Fan angle : {{ angle }}</div>
+<hr />
+
+<img  src="../../assets/ac-off(1).jpg" width="100%" height="600px" />
+
+<!-- <img  *ngIf="compStatus=='on' " src="../../assets/ac-on.jpg" width="100%" height="600px" /> -->
+
+
+<img *ngIf="compStatus=='on' && angle==1" class="rotated"
+ src="../../assets/cropped.jpg" width="80%" height="110px" alt="">
+
+ <img *ngIf="compStatus=='on' && angle==2" class="rotated2"
+ src="../../assets/cropped.jpg" width="80%" height="110px" alt="">
+
+ <img *ngIf="compStatus=='on' && angle==3" class="rotated3"
+ src="../../assets/cropped.jpg" width="80%" height="110px" alt="">
+
+
+
+

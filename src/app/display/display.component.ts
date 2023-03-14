@@ -1,6 +1,7 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { getDatabase, ref, onValue } from 'firebase/database';
 import { initializeApp } from 'firebase/app';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDnRYbbob_SVsjxGJUT6iByuY_EAHfb3-U',
@@ -36,7 +37,7 @@ export class DisplayComponent {
   compStatus = 'off';
   angle = 0;
   speed = 0;
-
+  // faCoffee = faCoffee;
   @HostListener('window:test', ['$event'])
   testListener(event: any) {
     this.compStatus = event.detail;

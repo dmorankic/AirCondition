@@ -1,8 +1,21 @@
-<button (click)="turnOnAC()">Turn AC on</button>
-<button (click)="turnOffAC()">Turn AC off</button>
-<hr>
-<button (click)="incFanSpeed()">Fan speed +</button>
-<button (click)="decFanSpeed()">Fan speed -</button>
-<hr>
-<button (click)="incFanAngle()">Fan Angle +</button>
-<button (click)="decFanAngle()">Fan Angle -</button>
+
+ <h3  style="margin-left: 80px; font-size: xx-large;">Power</h3>
+ <fa-icon [icon]="faOff" size="5x" style="margin-left: 80px;"
+ (click)="switchACState()"></fa-icon><br>
+
+<br>
+<h3  style="margin-left: 50px; font-size: xx-large;">Fan speed</h3>
+<fa-icon [icon]="faFan" size="6x" style="margin-right: 50px;"
+(click)="incFanSpeed()"></fa-icon>
+<fa-icon [icon]="faFan" size="4x" (click)="decFanSpeed()"></fa-icon>
+
+
+
+<br>
+<h3  style="margin-left: 50px; font-size: xx-large;">Fan angle</h3>
+
+<fa-icon [icon]="faUp" size="6x" style="margin-right: 80px;
+margin-top: 80px;"
+(click)="incFanAngle()"></fa-icon>
+<fa-icon [icon]="faDown" size="4x" (click)="decFanAngle()"></fa-icon>
+
